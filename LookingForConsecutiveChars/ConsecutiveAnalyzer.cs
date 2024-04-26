@@ -26,6 +26,7 @@ namespace LookingForConsecutiveChars
                 if (latinAlphabet.Contains(str[i]))
                 {
                     IsAnyLetters = true;
+
                     if (str[i] == prevChar)
                     {
                         currentCount++;
@@ -35,6 +36,7 @@ namespace LookingForConsecutiveChars
                         maxCount = Math.Max(maxCount, currentCount);
                         currentCount = 1;
                     }
+
                     prevChar = str[i];
                 }
             }
@@ -69,6 +71,7 @@ namespace LookingForConsecutiveChars
                 if (Char.IsDigit(str[i]))
                 {
                     IsAnyDigits = true;
+
                     if (str[i] == prevChar)
                     {
                         currentCount++;
@@ -78,6 +81,7 @@ namespace LookingForConsecutiveChars
                         maxCount = Math.Max(maxCount, currentCount);
                         currentCount = 1;
                     }
+
                     prevChar = str[i];
                 }
             }
